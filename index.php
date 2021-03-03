@@ -82,6 +82,11 @@ function countMissing($name){
     </style>
 </head>
 <body>
+    <header>
+        <h1>Monsieur Madame - Ma collection</h1>
+    </header>
+
+
 <table>
     <thead>
         <tr>
