@@ -13,7 +13,7 @@ $idx_nom = 0;
 $idx_rubrique = 1;
 
 //on ouvre le fichier en écriture
-if (($handle = fopen($_GET["name"].".csv", "r")) !== FALSE) 
+if (($handle = fopen("data".DIRECTORY_SEPARATOR.$_GET["name"].".csv", "r")) !== FALSE) 
 {
 	
 	//on parcours le fichier ligne à ligne, en stockant dans un tableau les donnée
@@ -35,7 +35,7 @@ if (($handle = fopen($_GET["name"].".csv", "r")) !== FALSE)
 }
 
 //on ouvre le fichier en ecriture et on le met à jour
-$ouvre=fopen($_GET["name"].".csv","w+");
+$ouvre=fopen("data".DIRECTORY_SEPARATOR.$_GET["name"].".csv","w+");
 fwrite($ouvre,$update);
 fclose($ouvre);
 
