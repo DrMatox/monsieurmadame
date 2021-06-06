@@ -148,17 +148,16 @@ function menu(){
         </tbody>
     </table>
     <div class="missing">
-        <h2>Liste Manquants</h2>
-        <ul>
-            <?php foreach($missing as $m): ?>
-                <li><?= $m['name'] ?>(<?= $m['compteur']?>)</li>
-                <ul><?= $m['missing'] ?></ul>
-
-
-            <?php endforeach; ?>
-        </ul>
+        <div>
+            <h2>Liste Manquants</h2>
+            <ul>
+                <?php foreach($missing as $m): ?>
+                    <li><?= $m['name'] ?>(<?= $m['compteur']?>)</li>
+                    <ul><?= $m['missing'] ?></ul>
+                <?php endforeach; ?>
+            </ul>
+        </div>
     </div>
-</div>
 <script>
     const containerTable = document.querySelector('.container table');
     const tbody = document.querySelector('.container table tbody');
